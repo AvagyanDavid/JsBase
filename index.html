@@ -5,22 +5,49 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let num = 1; // 1 задание Ответ: 3 
-        num = num + 1;
-        num = num + 1;
+        let num = 10; // 1 задание
+        num++;
+        num++;
+        num--;
         alert(num);
 
-        num = 1; // 2 задание Ответ: 6
-        num = num + 2;
-        num = num + 3;
-        alert(num);
+        num = 3; // 2 задание Ответ: 4
+        alert(++num);
 
-        num = 47; // 3 задание
-        num += 7;
-        num -= 18;
-        num *= 10;
-        num /= 15;
-        alert(num);
+        num = 3; // 3 задание Ответ: 3 
+        alert(num++);
+
+        num = 3; // 4 задание Ответ: 2
+        alert(--num);
+
+        num = 3; // 5 задание Ответ: 3
+        alert(num--);
+
+        let num1 = 3; // 6 задание Ответ: 4, 4
+        let num2 = ++num1;
+        alert(num1);
+        alert(num2);
+
+        num1 = 3; // 7 задание Ответ: 4, 3
+        num2 = num1++;
+        alert(num1);
+        alert(num2);
+
+        num1 = 3; // 8 задание Ответ: 2, 2
+        num2 = --num1;
+        alert(num1);
+        alert(num2);
+
+        num1 = 3; // 9  задание Ответ: 2, 3
+        num2 = num1--;
+        alert(num1);
+        alert(num2);
+
+        num1 = 3; // 10 задание Ответ: 3, 3
+        num1++;
+        num2 = num1--;
+        alert(num1++);
+        alert(--num2);
     </script>
 </head>
 <body>
