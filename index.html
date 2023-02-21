@@ -5,13 +5,21 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let obj = {x: 1, y: 2, z: 3}; // 1 задание
-        let prop = 'x';
-        console.log(obj[prop]);
-
-        obj = {x: 1, y: 2, z: 3}; // 2 задание
-        prop = 'x';
-        console.log(obj[prop]); 
+        let key = 'x'; // 1 задание
+        let obj = {
+        	[key]: 1,
+        	y: 2,
+        	z: 3
+        };
+        
+        let key1 = 'x'; // 2 задание
+        let key2 = 'y';
+        let key3 = 'z';
+        obj = { 
+        	[key1]: 1,
+        	[key2]: 2,
+        	[key3]: 3
+        };       
     </script>
 </head>
 <body>
