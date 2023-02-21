@@ -5,20 +5,16 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr1 = [1, 2, 3]; // 1 задание Ответ: а 2 3 
-        let arr2 = arr1;
-        arr1[0] = 'a';
-        console.log(arr2);
-        arr1 = [1, 2, 3]; // 2 задание Ответ: a b 3
-        arr2 = arr1;
-        arr1[0] = 'a';
-        arr2[1] = 'b';    
-        console.log(arr1);
-        arr1 = [1, 2, 3]; // 3 задание Ответ: b 2 3
-        arr2 = arr1;
-        arr1[0] = 'a';
-        arr2[0] = 'b';
-        console.log(arr2);
+        const arr = ['a', 'b', 'c']; // 1 задание Ответ: a ! c 
+        arr[1] = '!';
+        console.log(arr);
+        const arr = ['a', 'b', 'c']; // 2 задание Ответ: ошибка
+        arr = [1, 2, 3];
+        console.log(arr);
+        const arr = ['a', 'b', 'c']; // 3 задание Ответ: ошибка
+        arr = ['a', 'b', 'c'];
+        console.log(arr);
+        
     </script>
 </head>
 <body>
