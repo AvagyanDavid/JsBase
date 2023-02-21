@@ -5,13 +5,40 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let test1 = '123'; // 1 задание
-        let test2 = 123; 
-        if (test1 == test2){
-            console.log('+++')
+        let test1 = '3'; // 1 задание Ответ: +++
+        let test2 = '3';    
+        if (test1 == test2) {
+        	console.log('+++');
+        } else {
+        	console.log('---');
         }
-        else {
-            console.log('---')
+        test1 = '3'; // 2 задание Ответ: +++
+        test2 = '3';
+        if (test1 === test2) {
+        	console.log('+++');
+        } else {
+        	console.log('---');
+        }
+        test1 = 3; // 3 задание Ответ: +++
+        test2 = '3';
+        if (test1 == test2) {
+        	console.log('+++');
+        } else {
+        	console.log('---');
+        }
+        test1 = 3; // 4 задание Ответ: ---
+        test2 = '3';
+        if (test1 === test2) {
+        	console.log('+++');
+        } else {
+        	console.log('---');
+        }
+        test1 = 3; // 5 задание Ответ: +++
+        test2 = 3;    
+        if (test1 === test2) {
+        	console.log('+++');
+        } else {
+        	console.log('---');
         }
     </script>
 </head>
