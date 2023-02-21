@@ -5,9 +5,12 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let obj = {x: 1, y: 2, z: 3}; // 1 задание
-        delete obj.x;
-        console.log('x' in obj); // выведет False   
+        console.log( typeof {x: 1, y: 2, z: 3} ); // 1 задание Ответ: object
+        console.log( typeof {} ); // 2 задание Ответ: object
+        let obj = {x: 1, y: 2, z: 3}; // 3 задание Ответ: object
+        console.log( typeof obj );
+        obj = {x: 1, y: 2, z: 3}; // 4 задание Ответ: number
+        console.log( typeof obj['x'] );
     </script>
 </head>
 <body>
