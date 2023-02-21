@@ -5,10 +5,16 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        const arr = [1, 2, 3, 4, 5]; // 1 задание
-        const res = arr[1] + arr[2];
-        console.log(res);
-
+        let obj = {x: 1, y: 2, z: 3}; // 1 задание
+        console.log(obj['x']);
+        obj = {x: 1, y: 2, z: 3}; // 2 задание
+        let key = 'x';
+        console.log(obj[key]);
+        obj = {x: 1, y: 2, z: 3}; // 3 задание 
+        let sum = obj['x'] + obj['y'] + obj['x'];
+        console.log(sum);
+        obj = {x: 1, y: 2, z: 3}; // 4 задание
+        console.log(Object.keys(obj).length);
     </script>
 </head>
 <body>
