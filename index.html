@@ -5,12 +5,23 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        if (test > 0) // 1 задание 
-        	console.log('+++');
-        else
-        	console.log('---');
-        if (test > 0) // 2 задание
-        	console.log('+++');
+        let day = 28; // 1 задание 
+        if(day <= 10){
+            console.log('первая декада')
+        } else if (day <= 20){
+            console.log('вторая декада')
+        } else {
+            console.log('третья декада')
+        }
+        if(day <= 10){ // 2 задание 
+            console.log('первая декада')
+        } else if (day <= 20){
+            console.log('вторая декада')
+        } else if (day <= 31) {
+            console.log('третья декада')
+        } else {
+            console.log('неправильная дата')
+        }
     </script>
 </head>
 <body>
