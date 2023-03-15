@@ -5,18 +5,13 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let a = 2 * (3 - 1); // 1 задание 
-        let b = 6 - 2;
-        console.log(a == b);
+        let ok = confirm('Вам есть 18 лет?')
 
-        a = 5 * (7 - 4); // 2 задание
-        b = 1 + 2 + 7;
-        console.log(a > b);
-        
-        a = 2 ** 4; // 3 задание
-        b = 4 ** 2;
-        console.log(a != b)
-
+        if (ok){
+            alert('Тарелку с гречкой надо мыть СРАЗУ! Не повторяйте моих ошибок!')
+        } else {
+            alert('Данное содержание шокирует несформированную психику, мы следим за вашим здоровьем')
+        }
     </script>
 </head>
 <body>
