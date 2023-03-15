@@ -5,19 +5,21 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let num = 15
-        let num1 = 0
-        let sum = 0
-        if (num >= 10 && num <= 99){
-            num1 = num % 10;
-            num = (num - num1) / 10;
-            sum = num + num1
-            if (sum <= 9) {
-                console.log('сумма цифр однозначна')
-            } else {
-                console.log('сумма цифр неоднозначна')
-            }
-        }
+        
+        let lang = 'ru';
+
+        switch(lang){
+	    case 'ru':
+            console.log('рус');
+        break
+        case 'en':
+        	console.log('анг');
+        break;
+        case 'de': 
+        	console.log('нем');
+        default:
+        	console.log('язык не поддерживается');
+        }    
     </script>
 </head>
 <body>
