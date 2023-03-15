@@ -5,22 +5,18 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let day = 28; // 1 задание 
-        if(day <= 10){
-            console.log('первая декада')
-        } else if (day <= 20){
-            console.log('вторая декада')
-        } else {
-            console.log('третья декада')
-        }
-        if(day <= 10){ // 2 задание 
-            console.log('первая декада')
-        } else if (day <= 20){
-            console.log('вторая декада')
-        } else if (day <= 31) {
-            console.log('третья декада')
-        } else {
-            console.log('неправильная дата')
+        let num = 15
+        let num1 = 0
+        let sum = 0
+        if (num >= 10 && num <= 99){
+            num1 = num % 10;
+            num = (num - num1) / 10;
+            sum = num + num1
+            if (sum <= 9) {
+                console.log('сумма цифр однозначна')
+            } else {
+                console.log('сумма цифр неоднозначна')
+            }
         }
     </script>
 </head>
