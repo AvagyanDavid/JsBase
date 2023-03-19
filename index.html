@@ -6,18 +6,16 @@
     <script>
         "use strict"; 
         let num = 123456; // 1 задание
-        let last = String(num)[String(num).length-1]
-        if (last == 0){
-            console.log('+++')
-        } else {
-            console.log('---')
-        }
-        if (last % 2 == 0){
+        if (num % 2 == 0){ 
             console.log(' число четное ')
         } else {
             console.log(' число нечетное ')
         }
-
+        if (num % 3 == 0){ // 2 задание 
+            console.log('число делится на 3')
+        } else {
+            console.log('число не делится на 3')
+        } 
 
     </script>
 </head>
