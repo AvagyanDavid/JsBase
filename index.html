@@ -5,23 +5,19 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr = ['D','F','A','g','s']  
-        if  (arr[0]=='a'){ // 1 задание
+        let num = 123456; // 1 задание
+        let last = String(num)[String(num).length-1]
+        if (last == 0){
             console.log('+++')
         } else {
             console.log('---')
         }
-        let last = (arr[arr.length-1]) // 2 задание
-        if (last = 'x'){
-            console.log('+++')
+        if (last % 2 == 0){
+            console.log(' число четное ')
         } else {
-            console.log('---')
+            console.log(' число нечетное ')
         }
-        if (arr[0] == 'a' || arr[0] == 'b'){ // 3 задание 
-            console.log('+++')
-        } else {
-            console.log('---')
-        }
+
 
     </script>
 </head>
