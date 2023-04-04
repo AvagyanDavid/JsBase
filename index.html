@@ -5,32 +5,26 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr = [2, 5, 9, 3, 1, 4]; // 1 задание
-        let sum = 0
-        for (let elem of arr){
-            sum += elem
+        let str = '' // 1 задание
+        for (let i = 1;i<=5;i++){
+            str += '-'
         }
-        console.log(sum)
-        arr = [2, 5, 9, 3, 1, 4];// 2 задание 
-        sum = 0
-        for(let elem of arr){
-            if(elem % 2 == 0){
-                sum += elem
-            }
+        console.log(str)
+        str = '' // 2 задание 
+        for (let i = 1;i<=9;i++){
+            str += i
         }
-        console.log(sum)
-        arr = [2, 5, 9, 3, 1, 4];// 3 задание
-        sum = 0
-        for (let elem of arr){
-            sum += elem**2
+        console.log(str)
+        str = '' // 3 задание 
+        for (let i = 9;i>0;i--){
+            str += i
         }
-        console.log(sum)
-        arr = [2, 5, 9, 3, 1, 4]; // 4 задание
-        sum = 1
-        for (let elem of arr){
-           sum *= elem 
+        console.log(str)
+        str = '' // 4 задание 
+        for (let i = 1;i<=9;i++){
+            str += i+'-'
         }
-        console.log(sum)
+        console.log(str)
 
 
     </script>
