@@ -5,28 +5,29 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let str = '' // 1 задание
-        for (let i = 1;i<=5;i++){
-            str += '-'
+        for (let i=10; i<=1000; i++){ // 1 задание
+            let str = String(i);
+            console.log(str[0]);
         }
-        console.log(str)
-        str = '' // 2 задание 
-        for (let i = 1;i<=9;i++){
-            str += i
+        for (let i=10; i<=1000; i++){ // 2 задание
+            let str = String(i);
+            if (str % 2 == 0){
+                console.log(str[0]+str[1]);    
+            }
         }
-        console.log(str)
-        str = '' // 3 задание 
-        for (let i = 9;i>0;i--){
-            str += i
+        for (let i=10; i<=1000; i++){ // 3 задание
+            let str = String(i);
+            if (str[0] === '1'){
+                console.log(str);    
+            }
         }
-        console.log(str)
-        str = '' // 4 задание 
-        for (let i = 1;i<=9;i++){
-            str += i+'-'
+        for (let i=10; i<=1000; i++){ // 4 задание
+            let str = String(i);
+            if (str[0]+str[1] === '5'){
+                console.log(str);    
+            }
         }
-        console.log(str)
-
-
+        
     </script>
 </head>
 <body>
