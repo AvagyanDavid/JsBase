@@ -5,38 +5,18 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr = [1,2,3,4,5,0,4,6,2] // 1 задание 
-        for (let i = 0; i<arr.length;i++){
-            if (arr[i] == 0){
-                break
-            }
-            console.log(arr[i])
+        for (let i = 1; i <= 9; i++) { // 1 задание 
+	        for (let j = 1; j <= 3; j++) {
+		        document.write(i);
+	        }
         }
-        arr = [1,2,4,-5,6,7] // 2 задание 
-        let sum = 0
-        for (let i = 0; i<arr.length-1;i++){
-            if (arr[i] < 0){
-                break
-            } else {
-                sum += arr[i]
-                
-            }
+        for (let i = 1; i <= 3; i++) { // 2 задание 
+	        for (let j = 1; j <= 3; j++) {
+		        document.write( (i*10)+j+' ' );
+	        }
         }
-        arr = [1,4,3,5,6,7] // 3 задание
-        for (let i = 0; i<arr.length-1;i++){
-            if (arr[i] === 3){
-                console.log(i)
-                break
-            }
-        }
-        let counter = 0 // 4 задание
-        sum = 0
-        for (let i = 0;sum < 100;i++){
-            sum+=i
-            counter++
-            console.log(sum)
-        }
-        console.log(counter)
+
+
 
     </script>
 </head>
