@@ -5,19 +5,24 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        for (let i = 1; i <= 9; i++) { // 1 задание 
-	        for (let j = 1; j <= 3; j++) {
-		        document.write(i);
-	        }
+        let arr = []; // 1 задание 
+        for (let i = 1; i <= 10; i++) {
+        	arr.push(i);
         }
-        for (let i = 1; i <= 3; i++) { // 2 задание 
-	        for (let j = 1; j <= 3; j++) {
-		        document.write( (i*10)+j+' ' );
-	        }
+        console.log(arr);
+        arr = []; // 2 задание 
+        for (let i = 1; i <= 10; i++) {
+        	arr.push('x');
         }
-
-
-
+        console.log(arr);
+        arr = [1,2,3,4,5,6,7,8,9]; // 3 задание
+        let arr2 = [] 
+        for (let i = 0; i <= 10; i++) {
+        	if (arr[i] % 2 == 0){
+                arr2.push(arr[i]);
+            }    
+        }
+        console.log(arr2);
     </script>
 </head>
 <body>
