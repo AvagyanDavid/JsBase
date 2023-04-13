@@ -5,12 +5,33 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr = ['a', 'b', 'c', 'a', 'a', 'b']; // 1 задание
-        let count = {a: 0, b: 0, c: 0};
-        for (let elem of arr) {
-        	count[elem]++;
+        let arr = [1, 2, 3, 4, 5]; // 1 задание
+        for (let i = -1; i < arr.length -1; i++) {
+	        console.log(arr[i + 1]);
         }
-        console.log(count);
+
+        let sum = 0 // 2 задание
+        for (let i = 0; i< arr.length-1;i++){
+            sum = arr[i]+arr[i+1]
+            console.log(sum)
+        }
+
+        for (let i = 2; i< arr.length;i++){ // 3 задание
+            console.log(arr[i-1], arr[i-2])
+        }
+
+        sum = 0    // 4 задание
+        for (let i = 2; i< arr.length;i++){
+            sum = arr[i-1]+arr[i-2]+arr[i]
+            console.log(sum)
+        }
+
+        sum = 0    // 5 задание
+        for (let i = 1; i< arr.length-1;i++){
+            sum = arr[i-1] + arr[i+1] + arr[i]
+            console.log(sum)
+        }
+
     </script>
 </head>
 <body>
