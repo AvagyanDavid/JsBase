@@ -5,17 +5,28 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let obj = {x: 1, y: 2, z: 3}; // 1 задание 
-        for (let key in obj){
-            obj[key] = obj[key]**2 
+        let arr = ['a', 'b', 'c', 'd', 'e']; // 1 задание
+        let flag = false
+        for (let elem of arr){
+            if(elem == 'c'){
+                flag = true;
+                break;
+            }
         }
-        console.log(obj)
+        if (flag == true){
+            console.log('+++')
+        } else {
+            console.log('---')
+        }
 
-        obj = {x: 1, y: 2, z: 3}; // 2 задание 
-        for (let key in obj){
-            obj[key]++ 
+        let num = 10 // 2 задание
+        if (num % 2 != 0 && num % 3 != 0){
+            console.log('Число простое')
+        } else {
+            console.log('Число не является простым')
         }
-        console.log(obj)
+
+        
 
     </script>
 </head>
