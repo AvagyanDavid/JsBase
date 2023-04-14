@@ -5,15 +5,150 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let obj = {a: 10, b: 20, c: 30, d: 40, e: 50}; // 1 задание
-        let sum = 0;    
-        for (let elem in obj) {
-        	if (obj[elem] === 10 || obj[elem] === 20) {
-        		sum += obj[elem];
-        	}
+        for (let i = 0; i <= 10; i++) { // 1 задание
+	        console.log(i);
+        }
+
+        for (let i = 10; i >= 0; i--) { // 2 задание
+	        console.log(i);
+        }
+
+        for (let i = 10; i >= 0; i--) { // 3 задание 
+	        console.log(i);
+        }
+
+        let i = 0; // 4 задание
+        while (i <= 10) {
+        	console.log(i);
+        	i++;
+        }
+
+        let res = 0; // 5 задание
+        for (let i = 1; i <= 10; i++) {
+        	res += i;
+        }
+        console.log(res);
+
+        res = 1; // 6 задание
+        for (let i = 1; i <= 10; i++) {
+        	res *= i;
+        }
+        console.log(res);
+
+        let arr = ['1', '2', '3', '4', '5']; // 7 задание
+        let sum = 0;
+        for (let elem of arr) {
+        	sum += Number(elem);
         }
         console.log(sum);
 
+        arr = ['1', '2', '3', '4', '5']; // 8 задание
+        sum = '';
+
+        for (let elem of arr) {
+        	sum = Number(sum) + Number(elem);
+        }
+        console.log(sum);
+
+        arr = ['1', '2', '3', '4', '5']; // 9 задание 
+        sum = 0;    
+        for (let elem of arr) {
+        	sum += Number(elem);
+        }
+        console.log(sum);
+
+        arr = ['1', '2', '3', '4', '5']; // 10 задание
+        sum = 0;    
+        for (let i = 0; i <= arr.length-1; i++) {
+        	sum += Number(arr[i]);
+        }
+        console.log(sum);
+
+        arr = ['1', '2', '3', '4', '5']; // 11 задание 
+        sum = 0;
+        for (let i = 0; i <= arr.length-1; i++) {
+        	sum += Number(arr[i]);
+        }
+        console.log(sum);
+
+        arr = ['1', '2', '3', '4', '5']; // 12 задание
+        sum = 0;    
+        for (let i = 0; i <= arr.length; i++) {
+        	sum += i;
+        }
+        console.log(sum);
+
+        arr = [1, 2, 3, 4, 5]; // 13 задание
+        for (let i = 0;i<arr.length;i++) {
+        	arr[i] = arr[i]**2;
+        }
+        console.log(arr)
+
+        arr = []; // 14 задание
+        for (let i = 1; i <= 5; i++) {
+        	arr.push(i);
+        }
+        console.log(arr);
+
+        let obj = {a: 1, b: 2, c: 3}; // 15 задание
+        sum = 0;
+        for (let elem in obj) {
+        	sum += obj[elem];
+        }
+        console.log(sum);
+
+        obj = {a: 1, b: 2, c: 3}; // 16 задание
+        sum = 0;    
+        for (let key in obj) {
+        	sum += obj[key];
+        }
+        console.log(sum);
+
+        arr = [1, 2, 3, 4, 5]; // 17 задание
+        let flag = false    
+        for (let elem of arr) {
+        	if (elem === 3) {
+        		flag = true
+        	}
+        }
+        if (flag == true){
+            console.log('+++')
+        } else {
+            console.log('---')
+        }
+
+        arr = [] // 18 задание 
+        for (let i = 1; i <= 5; i++) { 
+	        arr.push(i);
+        }
+        console.log(arr);
+
+        arr = [1, 2, 3, 4, 5]; // 19 задание
+        res = false;
+        for (let elem of arr) {
+        	if (elem === 3) {
+        		res = true;
+        		break;
+        	}
+        }
+        console.log(res);
+
+        arr = [1, 2, 3, 4, 5]; // 20 задание
+        for (let elem of arr) {
+        	if (elem % 2 == 0) {
+        		console.log(elem);
+        	}
+        }
+
+        arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]; // 21 задание
+        res = []
+        for (let elem of arr) {
+        	if (elem % 2 != 0) {
+        		res.push(elem);
+        	}
+        }
+        console.log(res);
+        
     </script>
 </head>
 <body>
