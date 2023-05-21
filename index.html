@@ -5,19 +5,26 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let num = 1 // 1 задание
-        while (num <= 100){
-            console.log(num)
-            num++
+        for (let i = 1; i<=100;i++){ // 1 задание
+            console.log(i)
         }
-        num = 11;  // 2 задание
-        while (num <= 33){
-            console.log(num)
-            num++
+        for (let i = 11; i<= 33;i++){ // 2 задание
+            console.log(i)
         }
-        while (num <= 1000){ // 3 задание
-            console.log(num)
-            num*= 3
+        for (let i = 0; i <= 100; i++){ // 3 задание
+            if (i%2 == 0){
+                console.log(i)
+            }
+        }
+
+        for (let i = 1; i <= 99; i++){ // 4 задание
+            if (i%2 != 0){
+                console.log(i)
+            }
+        }
+
+        for (let i = 100; i >= 0; i--){ // 5 задание 
+            console.log(i)
         }
 
     </script>
