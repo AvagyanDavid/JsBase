@@ -5,19 +5,29 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let arr = [2, 5, 9, 15, 1, 4]; // 1 задание 
-        for (let elem in arr){
-            if (3 < arr[elem] && arr[elem] < 10){
-                console.log(arr[elem])
+        let sum = 0 // 1 задание
+        for (let i = 2; i<=100;i++){
+            if (i % 2 == 0){
+                sum += i;
             }
         }
+        console.log(sum)
 
-        let obj = {a: 1, b: 2, c: 3, d: 4, e: 5}; // 2 задание
-        for (let elem in obj){
-            if (obj[elem] % 2 != 0){
-                console.log(obj[elem])
+        sum = 0; // 2 задание
+        for (let i = 1; i<= 99;i++){
+            if (i%2 != 0){
+                sum += i;
             }
         }
+        console.log(sum)
+
+        let pr = 1; // 3 задание 
+        for (let i = 1; i<= 20;i++){
+            pr *= i
+        }
+        console.log(pr)
+
+
 
     </script>
 </head>
