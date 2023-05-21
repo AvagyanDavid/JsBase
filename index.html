@@ -5,48 +5,11 @@
     <title>My first programm with Js</title>
     <script>
         "use strict"; 
-        let month = 12; // 1 задание 
-        if (month == 1 || month == 2 || month == 12){
-            console.log('Зима')
-        } else {
-            if (3 <= month <= 5){
-                console.log('Весна')
-            } else {
-                if (6 <= month <= 8){
-                    console.log('Лето')
-                } else {
-                    console.log('Осень')
-                }
-            }
+        let arr = ['a', 'b', 'c', 'd', 'e']; // 1 задание 
+        for (let elem of arr){
+            console.log(elem)
         }
 
-        let str = 'abcde'; // 2 задание
-        if (str[0] == 'a'){
-            console.log('Да')
-        } else {
-            console.log('Нет')
-        }
-
-        let num = 12345 // 3 задание 
-        if (String(num)[0] == 1 || String(num)[0] == 2 || String(num)[0] == 3){
-            console.log('Да')
-        } else {
-            console.log('Нет')
-        }
-
-        num = 324; // 4 задание 
-        let sum = Number(String(num)[0]) + Number(String(num)[1]) + Number(String(num)[2]) 
-        console.log(sum);
-
-        num = 806806 // 5 задание
-        let sum1 = Number(String(num)[0]) + Number(String(num)[1]) + Number(String(num)[2])
-        let sum2 = Number(String(num)[3]) + Number(String(num)[4]) + Number(String(num)[5])
-        if (sum1 == sum2){
-            console.log('Да')
-        } else {
-            console.log('Нет')
-        }
-        
 
     </script>
 </head>
