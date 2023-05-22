@@ -5,26 +5,23 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [] // 1 задание 
-        for (let i = 1;i <= 10;i++){
-            arr.push(i)
-        }
-        console.log(arr)
-
-        arr = [] // 2 задание 
-        for (let i = 1;i <= 10;i++){
-            arr.push('x')
-        }
-        console.log(arr)
-
-        arr = [4,7,-4,3,2,-6,-8] // 3 задание
-        let NewArr = []
+        let arr = [1, 2, 3, 4, 5]; // 1 задание
         for (let elem in arr){
-            if (arr[elem] > 0){
-                NewArr.push(arr[elem])
-            }
+            arr[elem] = arr[elem]**2
         }
-        console.log(NewArr)
+        console.log(arr)
+
+        arr = [1, 2, 3, 4, 5]; // 2 задание
+        for (let elem in arr){
+            arr[elem] = arr[elem] - 1 
+        }
+        console.log(arr)
+
+        arr = [1, 2, 3, 4, 5]; // 3 задание
+        for (let elem in arr){
+            arr[elem] = arr[elem] + 10 
+        }
+        console.log(arr)
 
     </script>
 </head>
