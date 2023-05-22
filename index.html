@@ -5,29 +5,16 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = ['a', 'b', 'c', 'd', 'e']; // 1 задание
-        let flag = false;
+        let arr = [10, 20, 30, 40, 21, 32, 51]; // 1 задание 
+        let sum = 0;
         for (let elem in arr){
-            if (elem === 'c'){
-                flag = true;
-                break;
+            if(String(arr[elem])[0] == 1 || String(arr[elem])[0] == 2){
+                sum += arr[elem]
             }
         }
-        if (flag = true){
-            console.log('+++')
-        } else {
-            console.log('---')
-        }
+        console.log(sum)
 
-        let num = 6 // 2 задание 
-        flag = false;
-        if (num % 2 != 0 || num % 3 != 0 ){
-            consoole.log('+++')
-        } else {
-            console.log('---')
-        }
 
-        
     </script>
 </head>
 <body>
