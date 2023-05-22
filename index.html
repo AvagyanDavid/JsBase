@@ -5,14 +5,14 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [10, 20, 30, 40, 21, 32, 51]; // 1 задание 
+        let obj = {a: 10, b: 20, c: 30, d: 40, e: 50}; // 1 задание
         let sum = 0;
-        for (let elem in arr){
-            if(String(arr[elem])[0] == 1 || String(arr[elem])[0] == 2){
-                sum += arr[elem]
-            }
+        for (let elem in obj) {
+        	if (String(obj[elem])[0] === '1' || String(obj[elem])[0] === '2') {
+        		sum += obj[elem];
+        	}
         }
-        console.log(sum)
+        console.log(sum);
 
 
     </script>
