@@ -6,59 +6,142 @@
     <script>
         "use strict";
         let arr = []; // 1 задание
-        for (let i = 0; i < 3; i++) {
-            arr[i] = [];
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
-        	}
+        let k = 1;
+        for (let i = 0;i<4;i++){
+            arr[i] = []
+            for (let j = 0;j<2;j++){
+                arr[i].push(k++)
+            }
         }
-        console.log(arr);
+        console.log(arr)
 
         arr = []; // 2 задание
-        for (let i = 0; i < 3; i++) {
-        	arr[i] = [];
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
-        	}
-        }
-        console.log(arr);
+        k = 2;
+        for(let i = 0;i<4;i++){
+            arr[i] = []
+            for(let j = 0;j<3;j++){
+                arr[i].push(k)
+                k += 2
+            }
+        } 
+        console.log(arr)
 
         arr = []; // 3 задание
-        for (let i = 0; i < 3; i++) {
-        	arr[i] = [];
-        
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
-        	}
+        let count = 1;
+        for (let i = 0;i<2;i++){
+            arr[i] = []
+            for(let j = 0;j<2;j++){
+                arr[i][j] = []
+                for (let k = 0;k<2;k++){
+                    arr[i][j].push(count++)
+                }
+            }
         }
-        console.log(arr);
+        console.log(arr)
 
         arr = []; // 4 задание
+        k = 1
         for (let i = 0; i < 3; i++) {
         	arr[i] = [];
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
+        	for (let j = 0; j < 3; j++) {
+        		arr[i].push(k);
+        		k++;
         	}
         }
         console.log(arr);
 
         arr = []; // 5 задание
+        k = 1;
         for (let i = 0; i < 3; i++) {
         	arr[i] = [];
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+                k++;
         	}
         }
         console.log(arr);
 
         arr = []; // 6 задание
+        k = 1;
         for (let i = 0; i < 3; i++) {
         	arr[i] = [];
-        	for (let j = 1; j <= 5; j++) {
-        		arr[i].push(j);
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+        		k++;
         	}
         }
         console.log(arr);
+
+        arr = []; // 7 задание
+        k = 1;
+        for (let i = 0; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+        		k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 8 задание
+        for (let i = 0, k = 1; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+                k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 9 задание
+        for (let i = 0, k = 1; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+                k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 10 задание
+        for (let i = 0, k = 1; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+                k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 11 задание
+        for (let i = 0, k = 1; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 12 задание
+        k = 1;
+        for (let i = 0; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k;
+        		k++;
+        	}
+        }
+        console.log(arr);
+
+        arr = []; // 13 задание
+        for (let i = 0, k = 1; i < 3; i++) {
+        	arr[i] = [];
+        	for (let j = 0; j < 3; j++) {
+        		arr[i][j] = k++;
+        	}
+        }
+        console.log(arr);
+
 
     </script>
 </head>
