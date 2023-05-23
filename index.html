@@ -5,25 +5,36 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [[1, 2, 3], [4, 5], [6]]; // 1 задание
-        let sum = 0
-        for (let i = 0; i < arr.length;i++){
-            for (let j = 0;j < arr[i].length;j++){
-                sum += arr[i][j]
+        let arr = []; // 1 задание
+        for (let i = 0; i < 3; i++){
+            arr[i] = []
+            for (let j = 0;j<5;j++){
+                arr[i].push(j+1)
             }
         }
-        console.log(sum)
+        console.log(arr)
 
-        arr = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]; // 2 задание
-        sum = 0
-        for (let i = 0; i < arr.length;i++){
-            for (let j = 0;j < arr[i].length;j++){
-                for (let k = 0;k < arr[i][j].length;k++){
-                    sum += arr[i][j][k]
+        arr = [] // 2 задание
+        for (let i = 0; i<3; i++){
+            arr[i] = []
+            for (let j = 0; j<4;j++){
+                arr[i].push('x')
+            }
+        }
+        console.log(arr)
+
+        arr = [] // 3 задание
+        for(let i = 0;i<3;i++){
+            arr[i] = []
+            for (let j = 0; j<2;j++){
+                arr[i][j] = []
+                for (let k = 0; k<5;k++){
+                    arr[i][j].push(k+1)
                 }
             }
-        }   
-        console.log(sum)
+        }
+        console.log(arr)
+
 
 
 
