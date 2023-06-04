@@ -5,19 +5,18 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		function func(num = 5) { // 1 задание Ответ: 4,9,25
-        	console.log(num * num);
+		function func(num) { // 1 задание
+        	return num**3;
         } 
-        func(2);
-        func(3);
-        func();
+        let res = func(2);
+        console.log(res)
 
-        function func(num1 = 0, num2 = 0) { // 2 задание Ответ: 5,3,0
-        	console.log(num1 + num2);
+        function func2(num){ // 2 задание
+            return Math.sqrt(num)
         }
-        func(2, 3);
-        func(3);
-        func();
+        res = func2(3)
+        let res2 = func(4)
+        console.log(res+res2)
 
     </script>
 </head>
