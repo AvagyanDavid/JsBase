@@ -5,18 +5,34 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		function func(num) { // 1 задание
-        	return num**3;
-        } 
-        let res = func(2);
+		function sqrt(num) { // 1 задание
+        	return Math.sqrt(num);
+        }
+
+        function round(num) {
+        	return num.toFixed(3);
+        }
+        let num = round(sqrt(2))
+        console.log(num)
+
+        function sqrt2(num) { // 2 задание
+        	return Math.sqrt(num);
+        }
+        function sum(num1, num2, num3) {
+        	return num1 + num2 + num3;
+        }
+        num = sqrt2(2) 
+        let num2 = sqrt2(3)
+        let num3 = sqrt2(4)
+        let res = sum(num,num2,num3)
         console.log(res)
 
-        function func2(num){ // 2 задание
-            return Math.sqrt(num)
+        function round2(num) { // 3 задание 
+        	return num.toFixed(3);
         }
-        res = func2(3)
-        let res2 = func(4)
-        console.log(res+res2)
+        res = round2(res)
+        console.log(res)
+
 
     </script>
 </head>
