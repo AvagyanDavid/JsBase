@@ -5,8 +5,14 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		console.log(Math.max(4, -2, 5, 19, -130, 0, 10)) // 1 задание
-		console.log(Math.min(4, -2, 5, 19, -130, 0, 10))
+		function getRandomInt(min, max) { // 1 задание
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+		console.log(getRandomInt(1, 100));
+
+		for (let i = 0; i < 10;i++){ // 2 задание
+			console.log(Math.random());
+		}
 
     </script>
 </head>
