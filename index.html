@@ -6,9 +6,15 @@
     <script>
         "use strict";
 		let str = '1-2-3-4-5' // 1 задание
-        for (let i = 0;i<str.length-1;i++){
-            str = str.replace('-','.')
-        }
+        let arr = str.split('-')
+        console.log(arr)
+
+        str = '12345' // 2 задание
+        arr = str.split('')
+        console.log(arr)
+
+        arr = [1, 2, 3, 4, 5]; // 3 задание
+        str = arr.join('-')
         console.log(str)
 
 
