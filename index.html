@@ -5,13 +5,11 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		let str = 'http://abcde'; // 1 задание
-        let res = str.startsWith('http://');    
-        console.log(res);
-
-        str = 'asdv.html' // 2 задание
-        res = str.endsWith('.html')
-        console.log(res)
+		let str = '1-2-3-4-5' // 1 задание
+        for (let i = 0;i<str.length-1;i++){
+            str = str.replace('-','.')
+        }
+        console.log(str)
 
 
 
