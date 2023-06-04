@@ -5,8 +5,46 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		let obj = {a: 1, b: 2, c: 3}; // 1 задание
-        console.log(Object.keys(obj))
+		let num = '12345'; // 1 задание
+        let arr = num.split('');
+        let sum = 0;
+        for (let digit of arr) {
+        	sum += Number(digit);   
+        }
+        console.log(sum);
+
+        num = 12345; // 2 задание 
+        arr = String(num).split('');
+        sum = 0;
+        for (let digit of arr) {
+        	sum += Number(digit);
+        }
+        console.log(sum);
+
+        num = 12345; // 3 задание
+        arr = String(num).split('');
+        sum = 0;
+        for (let digit of arr) {
+        	sum += Number(digit);
+        }
+        console.log(sum); 
+
+        num = 12345; // 4 задание
+        arr = String(num).split('');
+        sum = 0;
+        for (let digit of arr) {
+        	sum += Number(digit);
+        }
+        console.log(sum);
+
+        num = 12345; // 5 задание
+        arr = String(num).split('');
+        let prod = 1;
+        for (let digit of arr) {
+        	prod *= Number(digit);
+        }
+        console.log(prod);
+
 
     </script>
 </head>
