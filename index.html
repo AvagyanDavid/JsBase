@@ -5,16 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		let str = 'я учу javascript!' // 1 задание 
-        let sub = str.substr(2,3)
-        let sub2 = str.substr(6,10)
-        console.log(sub,sub2)
-        sub = str.substring(2,5)
-        sub2 = str.substring(6,16)
-        console.log(sub,sub2)
-        sub = str.slice(2,5)
-        sub2 = str.slice(6,16)
-        console.log(sub,sub2)
+		let str = 'http://abcde'; // 1 задание
+        let res = str.startsWith('http://');    
+        console.log(res);
+
+        str = 'asdv.html' // 2 задание
+        res = str.endsWith('.html')
+        console.log(res)
+
+
 
     </script>
 </head>
