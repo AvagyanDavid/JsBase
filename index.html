@@ -6,13 +6,19 @@
     <script>
         "use strict";
 		let arr = [1, 2, 3, 4, 5] // 1 задание 
-        let elem = arr.slice(0,3)
-        console.log(elem)
+        arr.splice(1,2)
+        console.log(arr)
 
-        arr = [1, 2, 3, 4, 5] // 2 задание
-        elem = arr.slice(3,5)
-        console.log(elem)
+        arr = [1, 2, 3, 4, 5] // 2 задание 
+        arr.splice(2,0,'a', 'b', 'c')
+        console.log(arr)
 
+        arr = [1, 2, 3, 4, 5] // 3 задание
+        arr.splice(0,0,'a', 'b')
+        arr.splice(6,0,'c')
+        arr.splice(8,0,'e')
+        console.log(arr)
+        
     </script>
 </head>
 <body>
