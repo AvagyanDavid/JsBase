@@ -5,27 +5,20 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let num = 1; // 1 задание Ответ: 1
-        function func() {
-        	console.log(num);
+        function func() { // 1 задание Ответ: ничего не выведется, покажет ошибку 
+        	let num = 5;
+        	return num;
         }
-        func();
+        console.log(num);
 
-        num = 1; // 2 задание Ответ: 2
-        function func() {
-        	console.log(num);
+        function func() { // 2 задание Ответ: 5
+        	let num = 5;
+        	return num;
         }
-        num = 2;
-        func();
 
-        function func() { // 3 задание Ответ: 1 2
-        	console.log(num);
-        }
-        num;
-        num = 1;
-        func();
-        num = 2;
-        func();
+        console.log(func());
+
+        
 
         
     </script>
