@@ -5,18 +5,21 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		function func(num) { // 1 задание Ответ: выведет 1
-        	let sum = 0;
-
-        	for (let i = 1; i <= num; i++) {
-        		sum += i;
-        		return sum;
-        	}
+		function func(num){ // 1 задание
+            let i = 1
+            while(true){
+                num /= 2
+                if(num < 10){
+                    return i
+                }
+                i++
+            }
         }
+        let res = func(100)
+        console.log(res)
 
-        console.log( func(5) );
 
-
+        
     </script>
 </head>
 <body>
