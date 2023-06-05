@@ -5,102 +5,29 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		function getSum(arr){ // 1 задание
-            let sum = 0
-            for (let elem of arr){
-                sum += elem
-            }
-            return sum
+        let num = 1; // 1 задание Ответ: 1
+        function func() {
+        	console.log(num);
         }
-        let arr = [1,2,3,4,5]
-        console.log(getSum(arr))
+        func();
 
-        function getDivided(num){  // 2 задание
-            let arr = []
-            for (let i = 2;i<=num;i++){
-                if(num%i == 0){
-                    arr.push(i)
-                }
-            }
-            return arr
+        num = 1; // 2 задание Ответ: 2
+        function func() {
+        	console.log(num);
         }
-        console.log(getDivided(10))
+        num = 2;
+        func();
 
-        function getArr(str){ // 3 задание
-            return str.split('')
+        function func() { // 3 задание Ответ: 1 2
+        	console.log(num);
         }
-        console.log(getArr('12345'))
+        num;
+        num = 1;
+        func();
+        num = 2;
+        func();
 
-        function getReverse(str){ // 4 задание
-            let str2 = ''
-            for (let i = str.length-1;i >= 0;i--){
-                str2 += str[i]
-            }
-            return str2
-        }
-        console.log(getReverse('Привет'))
-
-        function func(str){ // 5 задание
-            return str.slice(0,1).toUpperCase()+str.slice(1)
-        }
-        console.log(func('привет'))
-
-        function func2(str){ // 6 задание
-            let words = str.split(' ');
-            for (let i = 0; i <= words.length - 1; i++) {
-                words[i] = words[i].slice(0, 1).toUpperCase() + words[i].slice(1);
-            };
-            let result = words.join(' ');
-                return result;
-            };
-        let str = 'hello world'
-        console.log(func2(str));
-
-        function Filling(num){ // 7 задание
-            let arr = []
-            for (let i = 1; i <= num;i++){
-                arr.push(i)
-            }
-            return arr
-        }
-        console.log(Filling(5))
-
-        function getSumNumber(num){ // 8 задание 
-            let sum = 0
-            for (let i = 0; i < String(num).length;i++){
-                sum += Number(String(num)[i])
-            }
-            return sum
-        }
-        console.log(getSumNumber(54))
-
-        function checkYear(year){ // 9 задание
-            return year%4 == 0
-        }
-        console.log(checkYear(2020))
- 
-        function getDay(sec){ // 10 задание
-            return sec/3600/24
-        }
-        console.log(getDay(86400))
-
-        function getRandom(){ // 11 задание 
-        	return Math.random();
-        }
-        console.log(getRandom())
-
-        function EasyNumber(num){ // 12 задание
-            for (let i = 2;i < num;i++){
-                if( num % i == 0){
-                    return false
-                }
-            }
-            return true
-        }
-        console.log(EasyNumber(7))
-
-
-
+        
     </script>
 </head>
 <body>
