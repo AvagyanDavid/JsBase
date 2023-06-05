@@ -5,23 +5,37 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-		function func(a, b) { // 1 задание 
-        	return a == b;
+		function sum(arr) { // 1 задание Ответ: название функции не отображает функционал его, следует назвать функцию avg
+        	let res = 0;
+        	for (let elem of arr) {
+        		res += elem;
+        	}
+        	return res / arr.length;
         }
 
-        function func(a, b) { // 2 задание
-        	return a != b;
+        function func(arr1, arr2) { // 2 задание Ответ: данная функция выполняет сразу несколько действий, что является нежелательным
+        	let res1 = 0;
+        	for (let elem of arr) {
+        		res1 += elem;
+        	}
+        	let res2 = 0;
+        	for (let elem of arr) {
+        		res2 += elem;
+        	}
+        	return res1 / res2;
         }
 
-        function func(a, b) { // 3 задание
-        	return a + b >= 10
-        }
-
-        function func(num) { // 4 задание
-        	return num >= 0
-        }
-
+        function getSum(arr) { // 3 задание Ответ: Данная функция умножает каждый элемент массива,
+            let res = 0;            // а по названию можно посчитать что происходить должно сложение 
+        	for (let elem of arr) {
+        		res *= elem;
+        	}
         
+        	return res;
+        }
+
+
+
 
     </script>
 </head>
