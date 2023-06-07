@@ -5,32 +5,20 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func() { // 1 задание Ответ: Function Declaration 
-        	console.log('!');
+        let arr = [ // 1 задание 
+            function() {return 1},
+            function() {return 2},
+            function() {return 3}
+        ]
+        
+        console.log(arr[2]()) // 2 задание 
+        
+        console.log(arr[0]()+arr[1]()+arr[2]()) // 3 задание 
+        
+        for (let func of arr){ // 4 задание 
+            console.log(func())
         }
-        +1;
 
-        function func() { // 2 задание Ответ: Function Declaration
-        	console.log('!');
-        } + 1;
-
-        +function func() { // 3 задание Ответ: Function Expression
-        	console.log('!');
-        } + 1;
-
-        + // 4 задание Ответ: Function Expression
-        function func() {
-        	console.log('!');
-        } + 1;
-
-        + 1 // 5 задание Ответ: Function Declaration
-        function func() {
-        	console.log('!');
-        } + 1;
-
-        function func() { // 6 задание Ответ: 	Function Declaration
-        	console.log('!');
-        } + console.log('!');
        
     </script>
 </head>
