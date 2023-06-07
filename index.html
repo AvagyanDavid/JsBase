@@ -5,12 +5,48 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function getSum(num1,num2){ // 1 задание 
-            function getSquare(num){return num**2}
-            function getCube(num){return num**3}
-
-            return getSquare(num1)+getCube(num2)
+        function test() { // 1 задание Ответ: 1
+        	let num = 1;
+        	function func() {
+        		console.log(num);
+        	}
+        	func();
         }
+        test();
+
+        function test() { // 2 задание Ответ: ничего не выведет
+        	let num = 1;
+        	function func() {
+        		console.log(num);
+        	}
+        }
+        test();
+
+        function test() { // 3 задание Ответ: ничего не выведет
+        	let num = 1;
+        	function func() {
+        		console.log(num);
+        	}
+        	func();
+        }
+
+        function test() {
+	let num;
+	
+	function func() { // 4 задание Ответ: 1 2 
+    		console.log(num);
+    	}
+    	num = 1
+    	func();
+    	num = 2
+    	func();
+    }
+    test();
+
+    
+
+
+
 
     </script>
 </head>
