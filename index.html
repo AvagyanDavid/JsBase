@@ -5,18 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [ // 1 задание 
-            function() {return 1},
-            function() {return 2},
-            function() {return 3}
-        ]
-        
-        console.log(arr[2]()) // 2 задание 
-        
-        console.log(arr[0]()+arr[1]()+arr[2]()) // 3 задание 
-        
-        for (let func of arr){ // 4 задание 
-            console.log(func())
+        let obj = { // 1 задание 
+            func1: function(){return 1},
+            func2: function(){return 2},
+            func3: function(){return 3}
+        }
+        console.log(obj.func1()+obj.func2()+obj.func3())
+
+        for (let func in obj){ // 2 задание 
+            console.log(obj[func]())
         }
 
        
