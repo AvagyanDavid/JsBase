@@ -5,26 +5,48 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func(num) { // 1 задание Ответ: 1
-        	num = 2;
+        function func(obj) { // 1 задание Ответ: obj{a:'!', b: 2, c: 3}
+        	obj.a = '!';
         }
-        let num = 1;
-        func(num);
-        console.log(num);
+        let obj = {a: 1, b: 2, c: 3};
+        func(obj);
+        console.log(obj);
 
-        function func() { // 2 задание Ответ: 1
-        	num = 2;
+        function func(arg) { // 2 задание Ответ: obj{a:'!', b: 2, c: 3}
+        	arg = '!';
         }
-        num = 1;
-        func();
-        console.log(num);
+        obj = {a: 1, b: 2, c: 3};
+        func(obj.a);
+        console.log(obj);
 
-        function func() { // 3 задание Ответ: 1
-        	let num = 2;
+        function func(obj) { // 3 задание Ответ: obj{a:'!', b: 2, c: 3}
+        	obj = '!';
         }
-        num = 1;
-        func();
-        console.log(num);
+        obj = {a: 1, b: 2, c: 3};
+        func(obj.a);
+        console.log(obj);
+
+        function func(arr) { // 4 задание Ответ: [1,3]
+        	arr.splice(1, 1);
+        }
+        let arr = [1, 2, 3];
+        func(arr);
+        console.log(arr);
+
+        function func(arr) { // 5 задание Ответ: [1,3]
+        	arr.slice(1, 1);
+        }
+        arr = [1, 2, 3];
+        func(arr);
+        console.log(arr);
+
+        function func(arr) { // 6 задание Ответ: ['!',2,3]
+        	let newArr = arr;
+        	newArr[0] = '!';
+        }
+        arr = [1, 2, 3];
+        func(arr);
+        console.log(arr);
 
 
         
