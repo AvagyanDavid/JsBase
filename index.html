@@ -6,15 +6,31 @@
     <script>
         "use strict";
         let obj = { // 1 задание 
-            func1: function(){return 1},
-            func2: function(){return 2},
-            func3: function(){return 3}
-        }
-        console.log(obj.func1()+obj.func2()+obj.func3())
-
-        for (let func in obj){ // 2 задание 
-            console.log(obj[func]())
-        }
+            summa: function(arr){
+                let sum = 0
+                for (let elem of arr){
+                    sum += elem
+                }
+                return sum
+            },
+            sumSquare: function(arr){
+                let sum = 0
+                for (let elem of arr){
+                    sum += elem**2
+                }
+                return sum
+            },
+            sumCube: function(arr){
+                let sum = 0
+                for (let elem of arr){
+                    sum += elem**3
+                }
+                return sum
+            }
+        };
+        console.log(obj.summa([1,2,3]))
+        console.log(obj.sumSquare([1,2,3]))
+        console.log(obj.sumCube([1,2,3]))
 
        
     </script>
