@@ -5,22 +5,12 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function test(arr,func){ // 1 задание 
-            for (let i = 0;i<arr.length;i++){
-                arr[i] = func(arr[i])
-            }
-            return arr
-        }
-        console.log(test([1,2,3],function getSquare(num){return num**2}))
+        function getSum(num1,num2){ // 1 задание 
+            function getSquare(num){return num**2}
+            function getCube(num){return num**3}
 
-        function test(arr,func){ // 2 задание 
-            for (let i = 0;i<arr.length;i++){
-                arr[i] = func(arr[i])
-            }
-            return arr
+            return getSquare(num1)+getCube(num2)
         }
-        console.log(test([1,2,3],function getSquare(num){return num**3}))
-        
 
     </script>
 </head>
