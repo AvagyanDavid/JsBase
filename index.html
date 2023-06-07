@@ -5,36 +5,12 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        test(function(num) { // 1 задание 
-        	return num ** 3;
-        });
-        function test(func) {
-        	console.log(func(3));
+        function test(num, func1, func2) { // 1 задание 
+        	return func1(num) + func2(num);
         }
-
-        test(function func(num) { // 2 задание 
-        	return num * num;
-        });
-
-        function test(func) {
-        	console.log(func(3));
-        }
-
-        test(+function func(num) { // 3 задание 
-        	return num * num;
-        });
-
-        function test(func) {
-        	console.log(func(3));
-        }
-
-        test(function(num) { // 4 задание 
-        	return num1+num2;
-        });
-
-        function test(func) {
-        	console.log(func(2,3));
-        }
+        console.log(test(3,
+        function getSquare(num){return num**2},
+        function getCube(num){return num**3}));
 
     </script>
 </head>
