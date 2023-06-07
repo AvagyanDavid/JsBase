@@ -5,15 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func1() { // 1 задание 
-	        return 3;
-        }
+        let func1 = function() { // 1 задание 
+        	return 1 ;
+        };
 
-        let func2 = func1; // 2 задание 
+        let func2 = function() { // 2 задание 
+        	return 2 ;
+        };
 
-        console.log(func1()); // 3 задание 
-        console.log(func2());
-        
+        alert(func1()+func2()); // 3 задание 
         
 
 
