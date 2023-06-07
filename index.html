@@ -5,16 +5,14 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func() { // 1 задание 
-        	console.log('!');
+        function func1() { // 1 задание 
+	        return 3;
         }
 
-        func(); // 2 задание 
+        let func2 = func1; // 2 задание 
 
-        console.log(func) // 3 задание 
-        
-        func = '123' // 4 задание
-        console.log(func)
+        console.log(func1()); // 3 задание 
+        console.log(func2());
         
         
 
