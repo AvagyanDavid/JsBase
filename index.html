@@ -5,55 +5,34 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let get1 = function() { // 1 задание 
-        	return 1;
-        }
-        let get2 = function() {
-        	return 2;
-        }
-        let get3 = function(){
-            return 3;
-        }
-
-        test(get1, get2, get3);
-        function test(func1, func2, func3) {
-        	return func1() + func2() + func3();
-        }
-
-        function func1() { // 2 задание 
-        	return 1;
-        }
-        function func2() {
-        	return 2;
-        }
-        function func3(){
-            return 3;
-        }
-
-        console.log(test(func1,func2,func3));
-        function test(func1, func2, func3) {
-        	return func1() + func2() + func3();
-        }
-
-        let func1 = function() { // 3 задание 
-        	return 1;
-        }
-        let func2 = function() {
-        	return 2;
-        }
-        let func3 = function(){
-            return 3;
-        }
-
-        console.log(test(func1, func2, func3));
-        function test(func1, func2, func3) {
-        	return func1() + func2() + func3();
+        test(function (num) { // 1 задание 
+        	return num **3;
+        });
+        function test(func) {
+        	console.log(func(3));
         }
         
+        test(function func(num) { // 2 задание 
+        	return num **3;
+        });
+        function test(func) {
+        	console.log(func(3));
+        }
 
+        function test(func) { // 3 задание
+        	console.log(func(3));
+        }
+        test(function func(num) {  
+        	return num **3;
+        });
 
+        function test(func) { // 4 задание 
+        	console.log(func(2,3));
+        }
+        test(function(num1,num2) { 
+        	return num1+num2;
+        });
 
-       
     </script>
 </head>
 <body>
