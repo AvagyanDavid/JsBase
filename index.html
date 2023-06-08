@@ -9,37 +9,14 @@
         	let result = [];
         	for (let elem of arr) {
         		result.push( callback(elem) );
-        	}        
+        	}
         	return result;
         }
-        let result = each([1, 2, 3, 4, 5], function(num) {
-        	return num * 2;
-        });
+        function cube(num) {
+        	return num ** 3;
+        }
+        let result = each([1, 2, 3, 4, 5], cube);
         console.log(result);
-
-        function each(arr, callback) { // 2 задание 
-        	let result = [];
-        	for (let i = arr.length-1;i>=0;i--) {
-        		result.push( callback(arr[i]) );
-        	}        
-        	return result;
-        }
-        result = each(['1','2','3','4'],function(num){
-            return num;
-        });
-        console.log(result);
-
-        function each(arr, callback) { // 3 задание 
-        	let result = [];
-        	for (let elem of arr) {
-        		result.push( callback(elem) );
-        	}        
-        	return result;
-        }
-        result = each(['привет','меня','зовут','давид'],function(str){
-            return str.slice(0,1).toUpperCase()+str.slice(1);
-        })
-        console.log(result) 
 
 
     </script>
