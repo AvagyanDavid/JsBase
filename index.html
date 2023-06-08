@@ -5,12 +5,46 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let result = every([1, 2, 3, 4, 5],elem => elem > 0); // 1 задание 
-        
-        result = every([1, 2, 3, 4, 5], (elem, index) => elem * index > 10); // 2 задание 
-        
-        let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]; // 3 задание 
-        result = each(arr, (elem, index) => elem * index > 10);
+        function test() { // 1 задание Ответ: 3
+        	let num1 = 1;
+        	let num2 = 2; 
+        	return function() {
+        		return num1 + num2;
+        	}
+        }
+        let func = test();
+        console.log(func());
+
+        function test() { // 2 задание Ответ: 3
+        	let num1 = 1;
+        	let num2 = 2;
+        	return function() {
+        		return num1 + num2;
+        	}
+        }
+        console.log(test()());
+
+        function test() { // 3 задание Ответ: 3
+        	let num1 = 1;
+        	return function() {
+        		return num1 + num2;
+        	}
+        }
+        let num2 = 2;
+        func = test();
+        console.log(func());
+
+        function test() { // 4 задание Ответ: 1
+        	let num = 1;
+        	return function() {
+        		return num;
+        	}
+        }
+        let num = 2;
+        func = test();
+        console.log(func());
+
+
 
         
     </script>
