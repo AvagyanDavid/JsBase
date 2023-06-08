@@ -5,20 +5,18 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function getSum(func1,func2){ // 1 задание    
-            function func1(){
-                return function(){
-                    return 1;
-                }
-            }
-            function func2(){
-                return function(){
-                    return 2;
-                }
-            }
-            return func1()()+func2()()
+        function func() {  // 1 задание 
+        	return function() {
+        		return function() {
+                    return function(){
+                        return function(){
+                            return '!';
+                        };
+                    };
+        		};
+        	};
         }
-        console.log(getSum());
+        console.log(func()()()()());
 
     </script>
 </head>
