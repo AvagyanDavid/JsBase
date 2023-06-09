@@ -5,29 +5,12 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = ['1','2','3','4','5'] //1 задание 
-        let res = arr.map(function(elem){
-            return elem +'!';
-        })
-        console.log(res);
- 
-        arr = ['Привет','Меня','Зовут','Давид'] // 2 задание  
-        res = arr.map(function(elem){
-            return elem.split('').reverse().join('');
-        })
-        console.log(res)
-
-        arr = ['123', '456', '789']; // 3 задание 
-        res = arr.map(function(elem){
-            return elem.split('')
-        })
-        console.log(res)
-
-        arr = [1,2,3,4,5]; // 4 задание 
-        res = arr.map(function(elem,index){
-            return elem*index
-        })
-        console.log(res);
+        let arr = [1,2,3,4,5]; // 1 задание 
+        let sum = 0;
+        arr.forEach(function(elem) { 
+        	sum += elem**2;
+        });
+        console.log(sum)
 
         
         
