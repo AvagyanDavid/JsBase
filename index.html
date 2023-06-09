@@ -6,29 +6,32 @@
     <script>
         "use strict";
         function func(obj) { // 1 задание 
-        	for (let elem in obj) {
+        	let sum = 0;
+            for (let elem in obj) {
         		if (typeof obj[elem] == 'object') {
-        			func(obj[elem]);
+        			sum += func(obj[elem]);
         		} else {
-        			console.log(obj[elem]);
+        			sum += obj[elem];
         		}
         	}
+            return sum;
         }
         func({a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}})
-
-        let NewArr = []; // 2 задание 
-        function func(arr) {  
+          
+        
+        function func(arr) { // 2 задание
+            let str = '';
             for (let elem of arr) {
         		if (typeof elem == 'object') {
-        			func(elem);
+        			str += func(elem);
         		} else {
-        			NewArr.push(elem);
+        			str += elem;
         		}
         	}
+            return str
         }
-        func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
-        console.log(NewArr);
-
+        console.log(func(['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]]));
+        
 
 
 
