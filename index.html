@@ -5,28 +5,56 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func() { // 1 задание Ответ: 0 0 0 
-        	let num = 0;
+        let counter = 0; // 1 задание Ответ: 0 1 2 3
+        function test() {
         	return function() {
-        		console.log(num);
-        		num++;
+        		console.log(counter);
+        		counter++;
         	};
         }
-        func()();
-        func()();
-        func()();
+        let func = test;
+        let func1 = func();
+        let func2 = func();
+        func1();
+        func2();
+        func1();
+        func2();
+    
+        function test() { // 2 задание Ответ: 0 0 1 1 
+        	let counter = 0;
+        	return function() {
+        		return function() {
+        			console.log(counter);
+        			counter++;
+        		};
+        	};
+        }
+        func = test()();
+        func1 = func;
+        func2 = func;
+        func1();
+        func2();
+        func1();
+        func2();
 
-        function func() { // 2 задание Ответ: 0 1 2
-        	let num = 0;
+        function test() { // 3 задание Ответ: покажет исходный код функции столько раз сколько будет вызываться func1 и func2
+        	let counter = 0;
         	return function() {
-        		console.log(num);
-        		num++;
+        		return function() {
+        			console.log(counter);
+        			counter++;
+        		};
         	};
         }
-        let test = func;
-        test()();
-        test()();
-        test()();
+        func = test();
+        func1 = func();
+        func2 = func();
+        func1();
+        func2();
+        func1();
+        func2();
+
+        
         
     </script>
 </head>
