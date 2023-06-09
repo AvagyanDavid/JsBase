@@ -5,17 +5,33 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func(arr){ // 1 задание 
-            for (let i = 0;i<arr.length;i++){
-                if(typeof arr[i] == 'object'){
-                    arr[i] = func(arr[i])
-                } else {
-                    arr[i] = arr[i]**2
-                }
-            }
-            return arr
-        }
-        console.log(func([1, [2, 7, 8], [3, 4], [5, [6, 7]]]));
+        let arr = ['1','2','3','4','5'] //1 задание 
+        let res = arr.map(function(elem){
+            return elem +'!';
+        })
+        console.log(res);
+
+        arr = ['Привет','Меня','Зовут','Давид'] // 2 задание  
+        res = arr.map(function(elem){
+            return elem.split('').reverse().join('');
+        })
+        console.log(res)
+
+        arr = ['123', '456', '789']; // 3 задание 
+        res = arr.map(function(elem){
+            return elem.split('')
+        })
+        console.log(res)
+
+        arr = [1,2,3,4,5]; // 4 задание 
+        res = arr.map(function(elem,index){
+            return elem*index
+        })
+        console.log(res);
+
+        
+        
+        
 
 
 
