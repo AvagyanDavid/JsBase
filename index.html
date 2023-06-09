@@ -5,27 +5,17 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        (function() { // 1 задание
-        	return function(){
-                return function(){
-                    console.log('!');
-                };
-            };
-        })()()();
+        let str = 'str'; // 1 задание Ответ: '1'       
+        (function() {
+        	console.log(1);
+        })();
 
-        (function(num1) { // 2 задание
-        	return function(num2){
-                console.log(num1+num2)
-            }
-        })(1)(2);
+        str = 'str' // 2 задание Ответ: выведет ошибку
+        (function() {
+        	console.log(1);
+        })();
 
-        (function(num1) { // 3 задание 
-            return function(num2){
-                return function(num3){
-                    console.log(num1+num2+num3);
-                }
-            }
-        })(1)(2)(3);
+        
 
 
 
