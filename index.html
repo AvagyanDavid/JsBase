@@ -5,12 +5,63 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [1,2,3,4,5]; // 1 задание 
-        let sum = 0;
-        arr.forEach(function(elem) { 
-        	sum += elem**2;
+        let arr = [-1,5,-6,2,-3,12,-9] // 1 задание 
+        let res = arr.filter(function(elem){
+            if(elem > 0){
+                return true;
+            } else {
+                return false;
+            }
         });
-        console.log(sum)
+        console.log(res)
+
+        res = arr.filter(function(elem){ // 2 задание 
+            if(elem < 0){
+                return true;
+            } else {
+                return false;
+            }
+        });
+        console.log(res);
+
+        res = arr.filter(function(elem){ // 3 задание 
+            if(elem > 0 && elem < 10){
+                return true;
+            } else {
+                return false;
+            }
+        });
+        console.log(res)
+
+        arr = ['95819','1598157','234','qr','2389','t581','qofoashfiqhfelfkdf'] // 4 задание 
+        res = arr.filter(function(elem){
+            if(elem.length > 5){
+                return true;
+            } else {
+                return false;
+            }
+        })
+        console.log(res);
+
+        arr = [13,65,624,1,4,6,3,6] // 5 задание 
+        res = arr.filter(function(elem,id){
+            if(elem*id > 30){
+                return true;
+            } else {
+                return false;
+            }
+        })
+        console.log(res)
+
+        arr = [1, 2, [3, 4], 5, [6, 7]]; // 6 задание 
+        res = arr.filter(function(elem){
+            if(typeof elem != 'object'){
+                return true;
+            } else {
+                return false;
+            }
+        })
+        console.log(res)
 
         
         
