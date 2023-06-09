@@ -5,34 +5,13 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let result = function(){ // 1 задание 
-            let num = 0;
-            return function(){
-                console.log(num)
-                num++
+        function func(arr){
+            console.log(arr.shift())
+            if(arr.length != 0){
+                func(arr);
             }
-        }();
-        result();
-        result();
-
-        result = function(){ // 2 задание 
-            let num = 0;
-            return function(){
-                if (num == 6){
-                    num = 0
-                }
-                console.log(num)
-                num++
-            }
-        }();
-        result();
-        result();
-        result();
-        result();
-        result();
-        result();
-        result();
-        result();
+        }
+        let arr = func([1, 2, 3, 4, 5]);
 
 
 
