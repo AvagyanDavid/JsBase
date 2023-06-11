@@ -5,18 +5,14 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [2, 4, 6, 8]; // 1 задание 
-        let result = arr.some(function(elem) {
-        	return elem > 0 ;
-        });
-        console.log(result);
+        let arr = [1, 2, 3, 4, 5]; // 1 задание 
+        function func(num1, num2, num3, num4, num5) {
+        	return num1 + num2 + num3 + num4 + num5;
+        };
+        console.log(func(...arr));
 
-        result = arr.some(function(elem,id) { // 2 задание 
-        	return elem * id > 30 ;
-        });
-        console.log(result);
 
-        
+
         
         
         
