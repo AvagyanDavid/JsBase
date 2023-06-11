@@ -5,20 +5,19 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [...'12345']; // 1 задание Ответ: [1,2,3,4,5]
-        console.log(arr);
+        function func(...nums){ // 1 задание 
+            let sum = 0;
+            let counter = 0;
+            for (let num of nums) {
+	        	sum += num;
+                counter++
+	        }
+            let avg = sum/counter
+            return avg;
+        }
+        console.log(func(1,2,3,4,5))
 
-        arr = ['a', ...'12345']; // 2 задание Ответ: ['a',1,2,3,4,5]
-        console.log(arr);
 
-        arr = [...'12345', ...'56789']; // 3 задание Ответ: [1,2,3,4,5,5,6,7,8,9]
-        console.log(arr);
-
-        let arr1 = ['a', 'b', 'c']; // 4 задание Ответ: ['a','b','c',1,2,3,4,5]
-        let arr2 = [...arr1, ...'12345'];    
-        console.log(arr2);
-
-        
 
     </script>
 </head>
