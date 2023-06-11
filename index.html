@@ -5,17 +5,8 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func(...nums){ // 1 задание 
-            let sum = 0;
-            let counter = 0;
-            for (let num of nums) {
-	        	sum += num;
-                counter++
-	        }
-            let avg = sum/counter
-            return avg;
-        }
-        console.log(func(1,2,3,4,5))
+        let arr = ['John', 'Smit', 'development', 'programmer', 2000];  // 1 задание 
+        let [name,surname,department,position,salary] = arr;
 
 
 
