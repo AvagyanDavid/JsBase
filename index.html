@@ -5,9 +5,31 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let arr = [1, 2, 3, 4, 5]; // 1 задание 
-        console.log(Math.min(...arr));
-     
+        let arr1 = [1, 2, 3]; // 1 задание Ответ: ['a',1,2,3,'b','c',4,5,6]
+        let arr2 = [4, 5, 6];    
+        let arr  = ['a', ...arr1, 'b', 'c', ...arr2];
+        console.log(arr);
+
+        arr1 = [1, 2, 3]; // 2 задание Ответ: ['a',1,2,3,1,2,3,'b','c']
+        arr2 = [4, 5, 6];    
+        arr  = ['a', ...arr1, ...arr1, 'b', 'c'];
+        console.log(arr);
+
+        arr1 = [1, 2, 3]; // 3 задание Ответ: ['a','b','c',1,2,3,4,5,6]
+        arr2 = [...arr1, 4, 5, 6];    
+        arr  = ['a', 'b', 'c', ...arr2];
+        console.log(arr);
+
+        arr1 = [1, 2, 3]; // 4 задание Ответ: [0,1,2,3,4,5,6,7,8,9]
+        arr2 = [...arr1, 4, 5, 6];
+        let arr3 = [...arr2, 7, 8, 9];    
+        arr  = [0, ...arr3];
+        console.log(arr);
+
+        arr1 = [1, 2, 3]; // 5 задание Ответ: [1,2,3]
+        arr2 = [...arr1];    
+        console.log(arr2);
+
     </script>
 </head>
 <body>
