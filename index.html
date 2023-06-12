@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <title>My first programm with Js</title>
     <script>
-        let arr = ['John', 'Smit', 'development', 'programmer']; // 1 задание 
-        let [name,surname,department,position = 'trainee'] = arr;
+        function func1() { // 1 задание 
+        	return (new Date).getDate();
+        }
+        function func2(){
+            return (new Date).getMonth();
+        }
+        function func3(){
+            return (new Date).getFullYear();
+        }
+        let arr = [];
+        let [year = func3(), month = func2(), day = func1()] = arr;
         
     </script>
 </head>
