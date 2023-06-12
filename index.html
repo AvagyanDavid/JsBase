@@ -5,9 +5,18 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date = new Date(2025, 1, 1); // 1 задание 
-        console.log(date.getTime());
+        let date1 = new Date(1988, 3, 1); // 1 задание 
+        let date2 = new Date(2000, 1,10);
+        let dif = (date2.getTime() - date1.getTime())/(60*60*24);
+        console.log(dif) 
+
+        let birthday = new Date(2002,12,23); // 2 задание 
+        let now = new Date();
+        dif = (now.getTime() - birthday.getTime()) /(60*60*24*31)
+        console.log(dif)
+
         
+
     </script>
 </head>
 <body>
