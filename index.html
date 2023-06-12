@@ -4,31 +4,17 @@
     <meta charset="UTF-8">
     <title>My first programm with Js</title>
     <script>
-        function func1([name,surname,department,position,salary]) { // 1 задание 
-            console.log(name);
-            console.log(surname);
-            console.log(department);
-            console.log(position);
-            console.log(salary);
+        "use strict";
+        function func([color,width,height]) { // 1 задание 
+        	console.log(color,width,height);
         }
-        func1( ['John', 'Smit', 'development', 'programmer', 2000] );
-        
-        function func2([name,surname,info]) { // 2 задание 
-        	console.log(name , surname, info)
-        }
-        func2( ['John', 'Smit', 'development', 'programmer', 2000] );
+        func( {color: 'red', width: 400, height: 500} );
 
-        function func3([name,surname,department,position = 'джуниор']) { // 3 задание 
-        	console.log(name,surname,department,position);
+        function func([color = 'black',width,height]) { // 2 задание 
+        	console.log(color,width,height);
         }
-        func3( ['John', 'Smit', 'development'] );
+        func( {color: 'red', width: 400, height: 500} );
     
-        function func(department, [name,surname], [year,month,day]) { // 4 задание 
-            console.log(department,name,surname,year,month,day);
-        }
-        func( 'development', ['John', 'Smit'], [2018, 12, 31] );
-
-        
     </script>
 </head>
 <body>
