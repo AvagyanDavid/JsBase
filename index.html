@@ -5,17 +5,10 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date = new Date(); // 1 задание 
-        console.log(date.getDay());
+        let str = '2023-06-12' // 1 задание 
+        let res = str.split('-').reverse().join('.')
+        console.log(res)
     
-        if (date.getDay() == 0 || date.getDay() == 6){ // 2 задание 
-            console.log('Выходной')
-        } else {
-            console.log('Будний')
-        }
-
-        console.log(7-date.getDay()); // 3 задание 
-        
     </script>
 </head>
 <body>
