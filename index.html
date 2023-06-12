@@ -5,17 +5,21 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date1 = new Date(1988, 3, 1); // 1 задание 
-        let date2 = new Date(2000, 1,10);
-        let dif = (date2.getTime() - date1.getTime())/(60*60*24);
-        console.log(dif) 
+        let now  = new Date(2010,2,15); // 1 задание 
+        let date = new Date(2000,9,1);
+        let diff = now - date;
+        console.log(diff); 
 
-        let birthday = new Date(2002,12,23); // 2 задание 
-        let now = new Date();
-        dif = (now.getTime() - birthday.getTime()) /(60*60*24*31)
-        console.log(dif)
-
+        now  = new Date(2010,2,15); // 2 задание 
+        date = new Date(2000,9,1);
+        diff = (now - date) / (1000*60*60*24*31);
+        console.log(diff);
         
+        now  = new Date(2010,2,15); // 3 задание 
+        date = new Date(2000,9,1);
+        diff = (now - date) / (1000*60*60*24*31*12);
+        console.log(diff); 
+
 
     </script>
 </head>
