@@ -5,15 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function isLeap(year){ // 1 задание 
-            let date = new Date(2020, 2, 0);
-            if (date.getDate() == 29) {
-                return true;
+        let date = new Date(year, month, day); // 1 задание 
+        function checkDate(){
+            if (date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+            	return true;
             } else {
                 return false;
             }
         }
-        console.log(isLeap(2020));
+        console.log(checkDate(2025, 0, 32));
 
 
 
