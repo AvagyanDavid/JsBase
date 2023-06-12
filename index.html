@@ -5,16 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date = new Date(); // 1 задание 
-        console.log(date.getDay());
-    
-        if (date.getDay() == 0 || date.getDay() == 6){ // 2 задание 
-            console.log('Выходной')
-        } else {
-            console.log('Будний')
-        }
+        let date = new Date() // 1 задание 
+        let day = date.getMonth();
+        let months = [
+        	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+        	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+        ];
+        console.log(months[day]);
 
-        console.log(7-date.getDay()); // 3 задание 
+        
         
     </script>
 </head>
