@@ -5,11 +5,15 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func(month,year){ // 1 задание 
-            let date = new Date(year,month,0)
-            console.log(date.getDate())
+        function isLeap(year){ // 1 задание 
+            let date = new Date(2020, 2, 0);
+            if (date.getDate() == 29) {
+                return true;
+            } else {
+                return false;
+            }
         }
-        func(5,2025); // 2 задание 
+        console.log(isLeap(2020));
 
 
 
