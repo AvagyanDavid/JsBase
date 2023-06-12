@@ -5,22 +5,9 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function addZero(num) { // 1 задание 
-        	if (num >= 0 && num <= 9) {
-        		return '0' + num;
-        	} else {
-        		return num;
-        	}
-        }
-        let date = new Date();
-        console.log(
-            addZero(date.getHours()) + ':' +
-            addZero(date.getMinutes()) + ':' +
-            addZero(date.getSeconds()),
-        	addZero(date.getDate()) + '.' +
-            addZero(date.getMonth()) + '.' +
-            date.getFullYear()
-        );
+        let str = '2023-06-12' // 1 задание 
+        let res = str.split('-').reverse().join('.')
+        console.log(res)
     
     </script>
 </head>
