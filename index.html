@@ -5,12 +5,22 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date = new Date(); // 1 задание 
-        console.log(date.getDate());
-
-        console.log(date.getMonth()+1); // 2 задание 
-
-        console.log(date.getFullYear()); // 3 задание 
+        function addZero(num) { // 1 задание 
+        	if (num >= 0 && num <= 9) {
+        		return '0' + num;
+        	} else {
+        		return num;
+        	}
+        }
+        let date = new Date();
+        console.log(
+            addZero(date.getHours()) + ':' +
+            addZero(date.getMinutes()) + ':' +
+            addZero(date.getSeconds()),
+        	addZero(date.getDate()) + '.' +
+            addZero(date.getMonth()) + '.' +
+            date.getFullYear()
+        );
     
     </script>
 </head>
