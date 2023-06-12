@@ -4,17 +4,12 @@
     <meta charset="UTF-8">
     <title>My first programm with Js</title>
     <script>
-        function func1() { // 1 задание 
-        	return (new Date).getDate();
-        }
-        function func2(){
-            return (new Date).getMonth();
-        }
-        function func3(){
-            return (new Date).getFullYear();
-        }
-        let arr = [];
-        let [year = func3(), month = func2(), day = func1()] = arr;
+        let options = {
+        	color: 'red',
+        	width:  400,
+        	height: 500,
+        };
+        let {color,width,height} = options;
         
     </script>
 </head>
