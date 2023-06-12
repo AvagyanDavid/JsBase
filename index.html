@@ -5,15 +5,12 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        function func([color,width,height]) { // 1 задание 
-        	console.log(color,width,height);
-        }
-        func( {color: 'red', width: 400, height: 500} );
+        let date = new Date(); // 1 задание 
+        console.log(date.getDate());
 
-        function func([color = 'black',width,height]) { // 2 задание 
-        	console.log(color,width,height);
-        }
-        func( {color: 'red', width: 400, height: 500} );
+        console.log(date.getMonth()+1); // 2 задание 
+
+        console.log(date.getFullYear()); // 3 задание 
     
     </script>
 </head>
