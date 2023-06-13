@@ -5,9 +5,11 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let date = new Date(); // 1 задание 
-        let day =  new Date(date.getDate(),0,31)
-        console.log(day)
+        // 1 задание Ответ: Нет, проблем не будет
+
+        let now = new Date();// 2 задание
+        let date = new Date(now.getFullYear(), now.getMonth() - 1, now.getDate());
+        console.log(date.getDay());
 
 
 
