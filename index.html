@@ -5,16 +5,10 @@
     <title>My first programm with Js</title>
     <script>
         "use strict";
-        let now = new Date();// 1 задание
-        let date = new Date(now.getFullYear()+ 1, 11, 31);
-        console.log(date.getDay());
-
-        date = new Date(now.getFullYear()+1,now.getMonth(),now.getDate()) // 2 задание 
-        console.log(date.getDay())
-
-        date = new Date(now.getFullYear()-1,now.getMonth(),now.getDate()) // 3 задание
-        console.log(date.getDay())
-
+        let now  = new Date(); // 1 задание 
+        let date = new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 12)
+        let date2 = new Date(now.getFullYear(), now.getMonth(), now.getDate(),now.getHours());
+        console.log((date2-date)/(1000*60*60))
     </script>
 </head>
 <body>
